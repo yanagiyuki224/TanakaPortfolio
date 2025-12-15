@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unityエンジニアのポートフォリオサイト。ゲーム制作の実績やスキルを紹介します。">
+    <title>Unity Engineer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">PORTFOLIO</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <h1 class="hero-title">CREATING <br><span class="highlight">IMMERSIVE</span> WORLDS</h1>
+                <p class="hero-subtitle">Unity Engineer / Game Developer</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>はじめまして。Unityエンジニアとして活動している[あなたの名前]です。</p>
+                        <p>「プレイヤーの心に残る体験」をモットーに、アクションゲームからVRコンテンツまで幅広いジャンルの開発に携わっています。C#を用いた効率的な設計と、シェーダー開発によるリッチな映像表現が得意です。
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Exp</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Released Games</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Development</h3>
+                        <ul class="skill-list">
+                            <li>C#</li>
+                            <li>Unity Engine</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <ul class="skill-list">
+                            <li>VS Code</li>
+                            <li>GitHub</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image placeholder-image">
+                            <span>Project Image 01</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Unity</span>
+                                <span class="tag">Action</span>
+                            </div>
+                            <h3 class="project-title">Cyber Runner 2077</h3>
+                            <p class="project-desc">サイバーパンクな世界観を舞台にしたハイスピードアクションゲーム。プレイヤーの操作性と爽快感を追求しました。</p>
+                            <a href="#" class="project-link">View Details <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image placeholder-image">
+                            <span>Project Image 02</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Unity</span>
+                                <span class="tag">VR</span>
+                            </div>
+                            <h3 class="project-title">Mystic Forest VR</h3>
+                            <p class="project-desc">魔法の森を探索するリラクゼーションVR体験。URPを使用し、軽量かつ美麗なグラフィックを実現。</p>
+                            <a href="#" class="project-link">View Details <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-image placeholder-image">
+                            <span>Project Image 03</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">Tool</span>
+                            </div>
+                            <h3 class="project-title">Auto Level Generator</h3>
+                            <p class="project-desc">ローグライクゲーム向けのダンジョン自動生成ツール。エディタ拡張により、レベルデザインの効率を大幅に向上。</p>
+                            <a href="#" class="project-link">View Details <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card">
+                        <div class="project-image placeholder-image">
+                            <span>Project Image 04</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Unity</span>
+                                <span class="tag">Mobile</span>
+                            </div>
+                            <h3 class="project-title">Galaxy Defender</h3>
+                            <p class="project-desc">スマートフォン向けの縦スクロールシューティング。タッチ操作に最適化されたUIと、派手なエフェクトが特徴。</p>
+                            <a href="#" class="project-link">View Details <span class="arrow">→</span></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <p>お仕事のご依頼やご相談はお気軽にどうぞ。</p>
+                    <a href="mailto:example@email.com" class="email-link">example@email.com</a>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">Twitter/X</a>
+                        <a href="#" aria-label="GitHub">GitHub</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Unity Engineer Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
